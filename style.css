@@ -3756,6 +3756,28 @@ figcaption {
   grid-template-rows: auto;
 }
 
+/* Initial styles for the container and image */
+.work-item.w-inline-block {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.work-item.w-inline-block img {
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover styles */
+.work-item.w-inline-block:hover {
+  z-index: 10; /* Raise above other elements */
+  transform: scale(1.05); /* Expand the container */
+}
+
+.work-item.w-inline-block:hover img {
+  transform: scale(1.05); /* Expand the image */
+}
+
 .text-display-4 {
   display: -webkit-box;
   display: -webkit-flex;
